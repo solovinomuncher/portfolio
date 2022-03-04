@@ -12,35 +12,37 @@ html {
 /* utility */
 /* ================= */
 
+/* text */
+body {
+  background: #121212;
+  color: rgba(245, 245, 245, 0.87);
+}
+
 /* links */
 a {
+  color: rgba(11, 127, 171, 1);
   text-decoration: none;
   transition: all 0.3s ease-in-out 0s;
 }
 
 h3 a {
-  color: black;
   transition: all 0.3s ease-in-out 0s;
 }
 
 a:visited,
 a:visited {
-  color: blue;
-}
-
-h3 a:visited {
-  color: black;
+  color: rgba(11, 127, 171, 1);
 }
 
 a:hover,
 a:active {
-  color: purple;
+  color: darkorchid;
   transition: all 0.3s ease-in-out 0s;
 }
 
 h3 a:hover,
 h3 a:active {
-  color: purple;
+  color: darkorchid;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -53,7 +55,7 @@ h3 a:active {
   width: 0px;
   height: 1px;
   display: block;
-  background: black;
+  background: rgba(245, 245, 245, 0.87);
   transition: 0.3s;
 }
 
@@ -62,7 +64,7 @@ h3 a:active {
 }
 
 .responsive {
-  color: darkmagenta;
+  color: pink;
   display: inline-block;
   transition: font-size 0.3s ease-in-out 0s;
 }
@@ -72,7 +74,7 @@ h3 a:active {
 }
 
 .interactive {
-  color: darkmagenta;
+  color: pink;
   display: inline-block;
   transition: transform 0.3s ease-in-out 0s;
 }
@@ -94,8 +96,8 @@ h3 a:active {
 .index-header__nav {
   position: fixed;
   width: 100%;
-  background: lightskyblue;
-  border-bottom: 1px solid black;
+  background: darkgray;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.87);
 }
 
 .index-header__nav > ul {
@@ -111,9 +113,8 @@ h3 a:active {
 .index-header__title {
   display: grid;
   justify-items: center;
-  background-color: lightblue;
   padding: 20vh 1em 20vh 1em;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.87);
 }
 
 .index-header__title > p {
@@ -152,8 +153,7 @@ h3 a:active {
 
 /* education */
 .education {
-  background: lightgray;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.87);
 }
 
 .education__title {
@@ -174,8 +174,7 @@ h3 a:active {
 
 /* courses and training */
 .courses-and-training {
-  background: lightpink;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.87);
 }
 
 .courses-and-training__title {
@@ -192,6 +191,19 @@ h3 a:active {
 
 .courses-and-training__list__items {
   margin: 0 0 1em 0;
+}
+
+.courses-and-training__list__items h3 a {
+  color: rgba(245, 245, 245, 0.87);
+}
+
+.courses-and-training__list__items h3 a:visited {
+  color: rgba(245, 245, 245, 0.87);
+}
+
+.courses-and-training__list__items h3 a:hover,
+.courses-and-training__list__items h3 a:active {
+  color: darkorchid;
 }
 
 @media (min-width: 750px) {
@@ -213,10 +225,9 @@ h3 a:active {
 
 /* portfolio */
 .portfolio {
-  background: lightsteelblue;
   display: grid;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.87);
 }
 
 .portfolio__title {
@@ -231,22 +242,38 @@ h3 a:active {
 
 .project {
   margin: 0 0 1em 0;
+  display: grid;
+  grid-template-rows: 1.3rem 1rem 1fr 2rem;
+  min-height: 200px;
+  gap: 10px;
+  border: 3px solid grey;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px grey;
 }
 
 .btn-view-github {
   display: inline-block;
-  background: lightgoldenrodyellow;
+  width: 125px;
+  justify-self: center;
+  background: lightgrey;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px grey;
   padding: 5px;
   margin-top: 5px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-view-github:visited {
+  background: lightgrey;
+  color: darkorchid;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .btn-view-github:hover,
 .btn-view-github:active {
   background: lightskyblue;
-  color: purple;
+  color: darkorchid;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -254,7 +281,7 @@ h3 a:active {
   .portfolio__projects {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 1.5em;
     margin: 0 5em 2em 5em;
     justify-items: center;
   }
@@ -264,57 +291,9 @@ h3 a:active {
   }
 }
 
-/* contact form */
-.contact-form {
-  background-color: lightgreen;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4em 4em 10em 5em;
-  text-align: center;
-  border-bottom: 1px solid black;
-  padding-top: 4em;
-}
-
-.contact-form__title {
-  padding: 1em 0 0 0;
-  /* text-decoration: underline; */
-}
-
-.contact-form #name {
-  width: 80vw;
-  height: 2em;
-  justify-self: center;
-  align-self: end;
-  margin-bottom: 10px;
-}
-
-.contact-form #email {
-  width: 80vw;
-  height: 2em;
-  justify-self: center;
-  align-self: start;
-  margin-top: 10px;
-}
-
-.contact-form #message {
-  width: 80vw;
-  justify-self: center;
-  align-self: center;
-
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.contact-form input[type="submit"] {
-  width: 5em;
-  height: 3em;
-  justify-self: center;
-  align-self: center;
-  margin: 1em 0 1em 0;
-}
-
 /* footer */
 .footer {
-  background: lightgoldenrodyellow;
+  background: darkgray;
   text-align: center;
 }
 
@@ -350,5 +329,43 @@ h3 a:active {
   }
   .footer__socials {
     width: 250px;
+  }
+}
+
+/* ================= */
+/* about page */
+/* ================= */
+
+.about-me-main {
+  margin: 6vh 0 0 0;
+  padding: 1em 4em;
+}
+
+.about-me-article {
+  padding-top: 1em;
+}
+
+.about-me-article > p {
+  padding-top: 1em;
+}
+
+.about-me-article > h3 {
+  padding-top: 0.75em;
+}
+
+@media (min-width: 750px) {
+  .about-me-main {
+    padding: 2em 10em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .about-me-main {
+    display: grid;
+    margin: 0 auto;
+    padding: 8vh 10em;
+    align-items: center;
+    justify-items: center;
+    width: 1000px;
   }
 }
