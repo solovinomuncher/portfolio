@@ -337,7 +337,7 @@ h3 a:active {
 /* ================= */
 
 .about-me-main {
-  margin: 6vh 0 0 0;
+  margin: 50px 0 0 0;
   padding: 1em 4em;
 }
 
@@ -363,7 +363,7 @@ h3 a:active {
   .about-me-main {
     display: grid;
     margin: 0 auto;
-    padding: 8vh 10em;
+    padding: 75px 10em;
     align-items: center;
     justify-items: center;
     width: 1000px;
