@@ -337,8 +337,7 @@ h3 a:active {
 /* ================= */
 
 .about-me-main {
-  margin: 50px 0 0 0;
-  padding: 1em 4em;
+  padding: 4em 4em;
 }
 
 .about-me-article {
@@ -355,7 +354,7 @@ h3 a:active {
 
 @media (min-width: 750px) {
   .about-me-main {
-    padding: 2em 10em;
+    padding: 4em 10em;
   }
 }
 
@@ -363,7 +362,7 @@ h3 a:active {
   .about-me-main {
     display: grid;
     margin: 0 auto;
-    padding: 75px 10em;
+    padding: 4em 10em;
     align-items: center;
     justify-items: center;
     width: 1000px;
