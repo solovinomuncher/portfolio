@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Erick Esqueda</title>
+    <title>Contact Erick Esqueda</title>
     <link rel="shortcut icon" type="image/png" href="images/computer-verymin.png">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
@@ -13,7 +13,7 @@
     <meta property="og:title" content="Erick Esqueda Web Development Portfolio">
     <meta property="og:description" content="My portfolio of web development projects.">
 </head>
-<body class="about-body">
+<body class="contact-form-body">
     <header class="index-header">
         <nav class="index-header__nav">
             <ul>
@@ -32,44 +32,27 @@
             </ul>
         </nav>
     </header>
-    <main class="about-me-main">
-        <article class="about-me-article">
-            <h2>About Me</h2>
-            <p>
-                My name is Erick. I build and design websites. I live in San Diego, California.
-            </p>
-            <p>
-                I like building things; both tangible things like woodworking and 3D printing projects, and 
-                intangible things like stories and websites.
-            </p>
-            <p>
-                However, building tangible things cost money, whereas websites are absolutely free and require only
-                a computer. While I can only build so many tangible things, with intangibles 
-                I can keep building and building and building...
-            </p>
-            <p>
-                Hence why I'm a web developer and not a woodworker.
-            </p>
-            <p>
-                Best way to reach me is via email, and I'll get back to you as soon as I can.
-            </p>
-        </article>
-        <article class="about-me-article">
-            <h2>About My Projects</h2>
-            <h3>Recipe Cost Management App</h3>
-            <p>
-                My first web app was a recipe cost management app for my mom.  Spreadsheets weren't cutting it, so 
-                I decided to flex my web development skills and make an app. She makes pastries and wanted to
-                calculate the cost of ingredients per recipe and adjust quantites if needed. It took a good amount 
-                of domain knowledge (imperial vs metric units, conversions, volume vs weight, etc), but I got it to work!
-            </p>
-            <h3>(More About Projects Coming Soon)</h3>
-            <h3>Final Note</h3>
-            <p>
-                Best way to reach me is via email, and I'll get back to you as soon as I can.
-            </p>
-        </article>
-    </main>
+    <p class="not-working"><em>NOTE: Contact form currently not working! Send message to email below instead.</em></p>
+    <form action="contact.php" method="post" class="contact-form">
+        <h2 class="contact-title">Contact Me</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="visitor_name" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="visitor_email" required>
+        </div>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="email_title" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea name="visitor_message" id="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
     <footer class="footer">
         <address id="contact" class="footer__contact-info">
             <p>email me:</p>
