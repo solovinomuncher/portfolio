@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://solovinomuncher.github.io/portfolio/">
+    <meta property="og:url" content="https://www.erickesqueda.net">
     <meta property="og:title" content="Erick Esqueda Web Development Portfolio">
     <meta property="og:description" content="My portfolio of web development projects.">
 </head>
@@ -17,6 +17,7 @@
     <header class="index-header">
         <nav class="index-header__nav">
             <ul>
+                <!-- <input id="menuToggleCheckbox" type="checkbox"/> -->
                 <li>
                     <a class="un" href="about.html">about</a>
                 </li>
@@ -27,6 +28,18 @@
                     <a class="un" href="#contact">contact</a>
                 </li>
             </ul>
+        </nav>
+        <nav>
+            <div id="menuToggle">
+                <label for="menuToggleCheckbox">Menu</label>
+                <input id="menuToggleCheckbox" type="checkbox"/>
+                <ul id="menu">
+                    <li><a class="un" href="index.html">home</a></li>
+                    <li><a class="un" href="about.html">about</a></li>
+                    <li><a class="un" href="https://docs.google.com/document/d/10bdjWqkvaNZwaGxLFEgJvpulF6tFJITcMm9F76aHC4Q/edit?usp=sharing">resume</a></li>
+                    <li><a class="un" href="#contact">contact</a></li>
+                </ul>
+            </div>
         </nav>
         <section class="index-header__title">
             <h1>Hello, my name is<br>Erick Esqueda</h1>
