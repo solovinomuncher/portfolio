@@ -63,6 +63,11 @@ h3 a:active {
   width: 100%;
 }
 
+.active {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid white;
+}
+
 .responsive {
   color: pink;
   display: inline-block;
@@ -102,12 +107,13 @@ h3 a:active {
 
 .index-header__nav > ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 1em 0 1em 0;
 }
 
 .index-header__nav > ul li {
   list-style-type: none;
+  font-size: 1.2rem;
 }
 
 .index-header__title {
@@ -337,7 +343,7 @@ h3 a:active {
 /* ================= */
 
 .about-me-main {
-  padding: 4em 4em;
+  padding: 4em 2em;
 }
 
 .about-me-article {
