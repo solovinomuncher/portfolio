@@ -151,6 +151,9 @@ table {
   /* Google's dark mode purple link */
   --link-hover-color: rgba(197, 138, 249, 1);
 
+  /* Google's dark mode white main result */
+  --h1-h2-color: rgba(232, 234, 237, 1);
+
   --main-font-family: "Roboto Slab", serif;
 }
 
@@ -164,23 +167,27 @@ html {
   font-family: "Roboto Slab", serif;
 }
 
-p {
-  font-size: 1.1rem;
-  line-height: 30px;
-}
-
 h1 {
   font-size: 2rem;
+  color: var(--h1-h2-color);
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 1.8rem;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  font-size: 1.9rem;
+  /* text-decoration: underline; */
+  /* text-underline-offset: 2px; */
+  color: var(--h1-h2-color);
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 30px;
 }
 
 em {
@@ -428,7 +435,8 @@ h3 a:active {
 .project {
   margin: 0 0 1em 0;
   display: grid;
-  grid-template-rows: 1.3rem 1rem 1fr 2rem;
+  grid-template-rows: min-content min-content 1fr min-content;
+  /* grid-auto-rows: minmax(min-content, max-content); */
   gap: 10px;
   border: 3px solid grey;
   padding: 10px;
@@ -445,7 +453,8 @@ h3 a:active {
   border-radius: 10px;
   box-shadow: 0px 0px 10px grey;
   padding: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -527,19 +536,33 @@ h3 a:active {
 
 .about-me-article {
   padding-top: 1em;
+  display: grid;
+}
+
+.about-me-article img {
+  margin: 20px;
+  max-width: 75%;
+  justify-self: center;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 .about-me-article > p {
-  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .about-me-article > h3 {
   padding-top: 0.75em;
+  padding-bottom: 0.5em;
 }
 
 @media (min-width: 750px) {
   .about-me-main {
     padding: 4em 10em;
+  }
+
+  .about-me-article img {
+    max-width: 350px;
   }
 }
 
