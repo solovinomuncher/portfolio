@@ -420,6 +420,7 @@ h3 a:active {
 
 .portfolio__projects {
   display: grid;
+  grid-auto-rows: 1fr;
   list-style-type: none;
   margin: 0 1em 1em 1em;
 }
@@ -428,7 +429,6 @@ h3 a:active {
   margin: 0 0 1em 0;
   display: grid;
   grid-template-rows: 1.3rem 1rem 1fr 2rem;
-  min-height: 275px;
   gap: 10px;
   border: 3px solid grey;
   padding: 10px;
