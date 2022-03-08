@@ -440,23 +440,23 @@ h3 a:active {
   display: inline-block;
   width: 125px;
   justify-self: center;
-  background: lightgrey;
+  background: var(--secondary-bg-color);
+  color: var(--link-color);
   border-radius: 10px;
-  box-shadow: 1px 1px 5px grey;
+  box-shadow: 0px 0px 10px grey;
   padding: 5px;
   margin-top: 5px;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .btn-view-github:visited {
-  background: lightgrey;
-  color: var(--link-hover-color);
+  background: var(--secondary-bg-color);
+  color: var(--link-color);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .btn-view-github:hover,
 .btn-view-github:active {
-  background: lightskyblue;
   color: var(--link-hover-color);
   transition: all 0.3s ease-in-out 0s;
 }
